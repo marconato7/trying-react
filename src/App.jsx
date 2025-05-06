@@ -1,8 +1,18 @@
-import "./App.css"
+function Header({ name })
+{
+    return (
+        <header>Hello, {name}!</header>
+    );
+}
 
 function App()
 {
-    return (<h1>Hello, React!</h1>);
+    return (
+        <div>
+            <Header name="Alice" />
+            <main>main</main>
+        </div>
+    );
 }
 
 export default App;
